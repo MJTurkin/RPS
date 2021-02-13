@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="shortcut icon" type:"image/png" href="assets/Favicon.png">
+    <title>RPS Game</title>
+</head>
+
+<body>
+    <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <button>Let's fight!</button>
+        </div>
+
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <img class="player-hand" src="./assets/rock.png" alt="" />
+                <img class="computer-hand" src="./assets/rock.png" alt="" />
+            </div>
+            <div class="options">
+                <button data-test='rock' class="rock"><i class="far fa-hand-rock fa-lg"></i></button>
+                <button data-test='paper' class="paper"><i class="far fa-paper-plane fa-lg"></i></button>
+                <button data-test='scissors' class="scissors"><i class="far fa-hand-scissors fa-lg"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
